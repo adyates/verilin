@@ -8,5 +8,6 @@ This was developed with OpenJDK 20, even though the build targets are all set to
 Aside from that, everything else is a straightforward Gradle build.
 
 
+## Other Important Things
 
-
+[Architecture Design Writeup](DESIGN.md)

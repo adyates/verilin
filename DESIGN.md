@@ -294,3 +294,18 @@ At a minimum, authentication would be handled by a basic password system.  More 
 need be secured via IdP federation (SAML, OAuth2.0, etc.).  In either case, the end result would generate a token to be
 used for authentication to any other endpoint (e.g. `Authorization: Bearer <token>`), validated on each request by the
 relevant plugins/homebrew auth on the backend of your web service architecture.
+
+
+## Code
+
+I did two separate code submissions, as they are both relevant to the architecture.
+
+Locally to this repo there is a bare minimum Kotlin server running Spring Boot, Swagger UI, and basic Jackson
+serialization.  Having never used Kotlin before (and ages since I used Java), it was a bit of a stretch but I got the
+basic dev server and path parameter docs in Swagger working in the end.  Default ports with the UI on 
+`http://localhost:8080/swagger-ui/index.html`.  Dev server should start with `./gradlew run`.
+
+However, there is another repo which essentially mirrors the Data Ingress workflow for a prior project I wrote in Python.
+Rather than redo it here, I updated the README with notes on how the entire setup works and what it feeds into: 
+[ksw-school-scrape](https://github.com/adyates/ksw-school-scrape).
+
